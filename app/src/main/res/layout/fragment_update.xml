@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#faebd7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UpdateFragment"
+    android:id="@+id/uprelative_update"
+    tools:ignore="RtlSymmetry"
+    >
+
+        <LinearLayout
+            android:id="@+id/upll_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:layout_weight="0.6"
+                android:typeface="serif"
+                android:gravity="center_vertical"
+                android:text="@string/str_name"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+            <EditText
+                android:id="@+id/upedt_name"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="5dp"
+
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:background="@drawable/border"
+                android:textColor="@color/purple_700"
+                android:hint="@string/str_entername"
+                android:textColorHint="@color/purple_700"
+                android:backgroundTint="@color/purple_700"
+                android:typeface="serif"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/upll_desig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upll_name"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="21dp">
+
+            <TextView
+                android:id="@+id/uptxtdesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="@string/designation"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:typeface="serif"
+                tools:ignore="RtlSymmetry" />
+
+            <Spinner
+                android:id="@+id/upspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_toEndOf="@id/uptxtdesignation"
+                android:background="@drawable/border" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/baseline_arrow_drop_down_circle_24" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/upllradio"
+            android:layout_below="@id/upll_hobbies"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_marginTop="10dp"
+                android:typeface="serif"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_weight="0.62"
+                android:text="@string/str_gender"
+                />
+
+            <RadioGroup
+                android:id="@+id/upgroupradio"
+                android:layout_weight="0.4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple_700"
+                    android:buttonTint="@color/purple_700"
+                    android:id="@+id/upradia_id1"
+                    android:text="@string/str_male"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/purple_700"
+                    android:buttonTint="@color/purple_700"
+                    android:id="@+id/upradia_id2"
+                    android:text="@string/str_female"
+                    android:textSize="15sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/upll_dob"
+            android:layout_below="@id/upllradio"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/uptxt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:layout_weight="0.6"
+                android:typeface="serif"
+                android:gravity="center_vertical"
+                android:text="D.O.B"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/uptxt_setdob"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/purple_700"
+                android:text="Enter D.O.B"
+                android:background="@drawable/border"
+                android:textColorHint="@color/purple_700"
+                android:backgroundTint="@color/purple_700"
+                android:typeface="serif"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/upll_desig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/upll_hobbies">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:typeface="serif"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:layout_weight="0.65"
+                android:text="@string/str_hobbies"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.4"
+                android:id="@+id/upll_check">
+                <CheckBox
+                    android:id="@+id/upcheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple_700"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/customcheck"
+                    android:checked="true"
+                    android:textSize="15sp"
+                    android:text="@string/str_read" />
+
+                <CheckBox
+                    android:id="@+id/upcheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple_700"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@android:color/transparent"
+                    android:drawableStart="@drawable/customcheck"
+                    android:buttonTint="@color/purple_700"
+                    android:textSize="15sp"
+                    android:text="@string/str_write" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upll_btn"
+            android:layout_below="@+id/upll_dob"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:backgroundTint="@color/purple_700"
+                android:layout_weight="0.5"
+                android:text="update" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_700"
+                android:layout_weight="0.5"
+                android:layout_marginHorizontal="30dp"
+                android:text="cancel" />
+
+        </LinearLayout>
+
+    </RelativeLayout>

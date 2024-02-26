@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelogin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginScreen">
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_above="@id/ll_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_login"
+        android:textSize="30sp"
+        android:textColor="@color/purple_700"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/ll_pwd"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/str_email"
+        android:textColor="@color/purple_700"
+        android:typeface="serif"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_email_24"
+        android:hint="@string/str_edtenteremail"
+        android:textColor="@color/purple_700"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border"
+        android:layout_marginHorizontal="20dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/str_pwd"
+            android:textColor="@color/purple_700"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+            android:textColor="@color/purple_700"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:hint="@string/str_enterpwd"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/upll_btn"
+        android:layout_below="@id/ll_pwd"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_700"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="0.5"
+            android:text="@string/str_submit" />
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_clear"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
